@@ -7,4 +7,4 @@
 |序号  | 标题   |
 |:-----:|:-----:|
 | 1 | [shell](contents/shell.md)|
-| 2 | [Homestead](contents/homestead.md) |
+| 2 | [Homestead(基于Vagrant的laravel应用环境)](contents/homestead.md) |
