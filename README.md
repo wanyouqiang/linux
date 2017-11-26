@@ -6,5 +6,5 @@
 ### 目录
 |序号  | 标题   |
 |:-----:|:-----:|
-|1|[shell](contents/shell.md)|
-
+| 1 | [shell](contents/shell.md)|
+| 2 | [Homestead](contents/homestead.md) |
