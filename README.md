@@ -8,3 +8,4 @@
 |:-----:|:-----:|
 | 1 | [shell](contents/shell.md)|
 | 2 | [Homestead(基于Vagrant的laravel应用环境)](contents/homestead.md) |
+| 3 | [Mariadb忘记密码解决方法](contents/mysql_forget_passwd.md) |
