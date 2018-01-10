@@ -43,6 +43,10 @@ vagrant box add metadata.json
 
 ```
 
+### Homestead 设置root密码
+
+sudo passwd root
+
 ### 常用命令
 * vagrant status 获取当前虚拟机的状态信息
 * vagrant global-status 查看全局所有虚拟机的状态信息
