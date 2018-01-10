@@ -23,6 +23,26 @@ Laravel Homestead 是一个官方的，已经打包好的Vagrant box,旨在提�
 * 删除machine ,使用vagrant destroy --force命令
 * 连接Mysql数据库，IP:192.168.10.10,username:homestead,password:secret
 
+### 手动安装Homestead(已经下载Homestead.box文件)
+```
+metadata.json
+{
+    "name": "laravel/homestead",  # 添加后的box名称
+    "versions": [{
+        "version": "5.0.1", # 版本号
+        "providers": [{
+            "name": "virtualbox",
+            "url": "file://E:/Homestead.box"  # 下载到本地的box
+        }]
+    }]
+}
+
+执行以下命令
+
+vagrant box add metadata.json
+
+```
+
 ### 常用命令
 * vagrant status 获取当前虚拟机的状态信息
 * vagrant global-status 查看全局所有虚拟机的状态信息
@@ -31,6 +51,7 @@ Laravel Homestead 是一个官方的，已经打包好的Vagrant box,旨在提�
 * vagrant destroy 移除本地环境
 * vagrant halt 关闭本地环境
 * vagrant provision 修改配置文件后重置
+* vagrant reload --provision 修改配置文件并重启
 
 ### Error example
 > 删除homestead后重新安装报错
