@@ -25,21 +25,13 @@ Laravel Homestead 是一个官方的，已经打包好的Vagrant box,旨在提�
 
 ### 手动安装Homestead(已经下载Homestead.box文件)
 ```
-metadata.json
-{
-    "name": "laravel/homestead",  # 添加后的box名称
-    "versions": [{
-        "version": "5.0.1", # 版本号
-        "providers": [{
-            "name": "virtualbox",
-            "url": "file://E:/Homestead.box"  # 下载到本地的box
-        }]
-    }]
-}
-
-执行以下命令
-
-vagrant box add metadata.json
+# 添加vagrant laravel/homestead box
+vagrant add laravel/homestead ~/v5.0.1.box
+# 修改版本号
+cd ~/.vagrant.d//boxes/laravel-VAGRANTSLASH-homestead
+mv 0 5.0.1  # 修改为当前版本号v5.0.1
+# 在当前目录下新建metadata_url文件，添加 https://atlas.hashicorp.com/laravel/homestead
+# 到homestead目录下执行vagrant up即可
 
 ```
 
